@@ -53,8 +53,8 @@
             margin-bottom:10px
         }
         .layui-text {
-            line-height:22px;
-            font-size:14px;
+            line-height:22px !important;
+            font-size:14px !important;
             color:#666
         }
         .layui-text h1, .layui-text h2, .layui-text h3 {
@@ -68,7 +68,7 @@
             font-size:24px
         }
         .layui-text h3 {
-            font-size:18px
+            font-size:18px !important;
         }
         .layui-text a:not(.layui-btn) {
             color:#01AAED
@@ -108,6 +108,6 @@
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
         .layui-timeline p {
-            margin-top: 0px;
-            margin-bottom: 0px;
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
         }
