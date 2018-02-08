@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+        <!-- <meta http-equiv="refresh" content="10"> 自动刷新-->
+        <title>QL</title>
+        <link rel="stylesheet" href="css/countdown.demo.css" type="text/css">
+        <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+        .align-center {
+            margin:0 auto;
+            /* 居中 这个是必须的，，其它的属性非必须 */
+            width:677px;
+            /* 给个宽度 顶到浏览器的两边就看不出居中效果了 */
+            text-align:center;
+            /* 文字等内容居中 */
+        }
+        .jumbotron {
+            background-color: #337AB7;
+        }
+        .jumbotron .h1, .jumbotron h1 {
+            color: #fff;
+        }
+        body {
+            font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif, "SimSun";
+        }
+        .countdown .item {
+            font-family:"Microsoft YaHei", Arial, Helvetica, sans-serif, "SimSun";
+            color: #fff;
+        }
+        .row .p, .row p {
+            font-size: 17.5px;
+            line-height: 1em;
+        }
+        </style>
+    </head>
+    
+    <body>
+        <div class="jumbotron text-center">
+             <h1>QL2018完成截至日期！！！</h1>
+
+            <div class="align-center">
+                <time>2018-02-15T00:00:00+0800</time>
+                <!-- 北京时间 -->
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="page-header">
+                                 <h1><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 项目进度<small></small></h1>
+
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">30% Complete</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="page-header">
+                                 <h1><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 项目日志<small></small></h1>
+
+                            </div>
+                            <blockquote>
+                                <p class="lead">2018.02.03</p>
+                                <p class="text-left"> <del>1. This line of text is meant to be treated as deleted text.</del>
+
+                                </p>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="page-header">
+                                 <h1><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 项目说明<small></small></h1>
+
+                            </div>
+                            <blockquote>
+                                <p class="text-left">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 200px;"></div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/jquery.countdown.js"></script>
+        <script src="https://cdn.bootcss.com/nosleep/0.6.0/NoSleep.js"></script>
+        <script>
+        var noSleep = new NoSleep();
+        noSleep.enable();
+
+
+
+        window.jQuery(function ($) {
+            "use strict";
+
+            $('time').countDown({
+                with_separators: false
+            });
+            $('.alt-1').countDown({
+                css_class: 'countdown-alt-1'
+            });
+            $('.alt-2').countDown({
+                css_class: 'countdown-alt-2'
+            });
+
+        });
+        </script>
+    </body>
+
+</html>
